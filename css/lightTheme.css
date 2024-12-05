@@ -1,0 +1,19 @@
+:root{
+    /*--primary: #0C0C0C;*/
+    --primary: #181818;
+    --primary-hover: #F8F8F8;
+    --secondary: #111111;
+
+    --background: #F5F5F5;
+    --background-alternate: #EEE5E9;
+
+    --navigation-text:#F5F5F5;
+    --navigation-text-hover:#0C0C0C;
+
+    --text-color-regular-A:#d6d6d6;
+    --text-color-regular-B:#c0c0c0;
+
+    --border-radius-smaller:12px;
+    --border-radius-small:16px;
+
+}

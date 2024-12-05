@@ -1,0 +1,317 @@
+html{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("../img/mountainsA.jpg");
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+}
+
+header{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+#navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation a,
+#navigation a:hover,
+#navigation a:visited{
+    color: var(--navigation-text);
+    text-decoration: none;
+    padding: 24px;
+}
+
+#navigation a:hover{
+    background-color: var(--primary-hover);
+    color: var(--navigation-text-hover);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Message-Banner{
+    display: flex;
+    width: 50%;
+    margin-top: 128px;
+    padding: 24px;
+    background-color: var(--primary);
+    color: var(--text-color-regular-A);
+    justify-content: center;
+    font-size: larger;
+    border-radius: var(--border-radius-small);
+}
+
+.PlaceHolder-A{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 6px;
+    transition: 0.3s ease;
+    color: var(--text-color-regular-B);
+}
+
+.PlaceHolder-A:hover{
+    scale: 1.05;
+    transition: 0.3s ease;
+}
+
+/*------------------------------------------------------REGULAR PLACEHOLDERS AND CARDS - POSTS*/
+
+.Card-PlaceHolder-Regular{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 128px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card-Regular{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 24px;
+    background-color: var(--primary);
+    color: var(--text-color-regular-A);
+    border-radius: var(--border-radius-small);
+}
+
+.Card-PlaceHolder-Left, .Card-PlaceHolder-Right{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 64px 0px;
+    background-color: var(--primary);
+    color: var(--text-color-regular-B);
+    border-radius: var(--border-radius-small);
+}
+
+.Card-PlaceHolder-Right{
+    flex-direction: row-reverse;
+}
+
+.Card-Left, .Card-Right{
+    width: 100%;
+    padding: 24px;
+}
+
+.Card-Right-Side-Button{
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    color: var(--primary);
+    border-top-right-radius: var(--border-radius-small);
+    border-bottom-right-radius: var(--border-radius-small);
+}
+
+.Card-Left-Side-Button{
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    color: var(--primary);
+    border-top-left-radius: var(--border-radius-small);;
+    border-bottom-left-radius: var(--border-radius-small);;
+}
+
+/*------------------------------------------------------DEVELOPERS FOR HIRE*/
+
+.Card-PlaceHolder-Row{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 64px 0px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Card-Profile{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-right: 24px;
+    padding: 12px;
+    background-color: var(--primary);
+    color: var(--text-color-regular-A);
+    border-radius: var(--border-radius-small);
+}
+
+.Card-Description{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 12px;
+    background-color: var(--primary);
+    color: var(--text-color-regular-B);
+    border-radius: var(--border-radius-small);
+    align-items: flex-start;
+}
+
+.Profile-Picture{
+    width: 256px;
+    height: 256px;
+    padding: 12px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+
+/*------------------------------------------------------Software Cards*/
+
+.Card-PlaceHolder-Gallery{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 64px 0px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.Card-Product{
+    display: flex;
+    width: 30%;
+    padding: 24px;
+    flex-direction: column;
+    background-color: var(--primary);
+    color: var(--text-color-regular-A);
+    border-radius: var(--border-radius-small);
+}
+
+.Product-Picture{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 12px;
+    align-self: center;
+}
+
+
+/*------------------------------------------------------BUTTONS*/
+a.Button-Link,
+a:hover.Button-Link,
+a:visited.Button-Link{
+    display: flex;
+    padding: 12px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: var(--text-color-regular-A);
+    background-color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: var(--border-radius-small);
+    font-size: large;
+    transition: 0.3s ease;
+}
+
+a:hover.Button-Link{
+    color: var(--navigation-text-hover);
+    background-color: var(--primary-hover);
+    transition: 0.3s ease;
+}
+
+a.Button-Link-Alternate,
+a:hover.Button-Link-Alternate,
+a:visited.Button-Link-Alternate{
+    display: flex;
+    padding: 12px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: var(--text-color-regular-A);
+    background-color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: var(--border-radius-small);
+    font-size: large;
+    transition: 0.3s ease;
+}
+
+a:hover.Button-Link-Alternate{
+    color: var(--navigation-text-hover);
+    background-color: var(--primary-hover);
+    transition: 0.3s ease;
+}
+
+a.Social-Link,
+a:hover.Social-Link,
+a:visited.Social-Link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-regular-B);
+    background-color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: var(--border-radius-small);
+}
+
+a:hover.Social-Link{
+    color: var(--navigation-text);
+}
+
+.Button-Wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--text-color-regular-A);
+    flex-grow: 1;
+}
+
+
+/* Initial state for the fade-in elements */
+.Fade-In-Element {
+    opacity: 0;               /* Start with the element hidden */
+    transform: translateY(20px); /* Optional: Slightly move the element down */
+    transition: opacity 1s ease, transform 1s ease; /* Apply a transition for opacity and transform */
+  }
+  
+  /* When the element becomes visible, apply the animation */
+  .Fade-In-Element-Visible {
+    opacity: 1;              /* Fade in the element */
+    transform: translateY(0); /* Bring the element to its original position */
+  }
